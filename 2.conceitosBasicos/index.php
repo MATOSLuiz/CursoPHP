@@ -44,5 +44,13 @@ echo
 "    testando"
 ;
 
+// Comentários
+
+//uma linha
+
+/*Multi 
+linha*/ 
+
+#assim também funciona
 
 ?>
