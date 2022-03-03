@@ -36,5 +36,13 @@ echo "<br>";
 echo "<br>";
 echo "<br>";
 
+//Espaço em branco funciona porém o ideal é seguir as boas práticas.
+
+echo "                        teste    <br>"    ;
+
+echo
+"    testando"
+;
+
 
 ?>
