@@ -7,3 +7,14 @@ for($i = 0; $i < count($arr); $i++) {
         echo "Número: $arr[$i] <br>";
     }
 }
+
+// desafio exercicio 30b
+//array dinamico por meio de um for
+
+$arr = [];
+
+for ($j = 1; $j <= 10; $j++){
+    array_push($arr, $j);
+}
+
+print_r($arr);
