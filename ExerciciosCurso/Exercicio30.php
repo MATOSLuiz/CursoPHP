@@ -11,10 +11,34 @@ for($i = 0; $i < count($arr); $i++) {
 // desafio exercicio 30b
 //array dinamico por meio de um for
 
-$arr = [];
+$arrow = [];
 
 for ($j = 1; $j <= 10; $j++){
-    array_push($arr, $j);
+    array_push($arrow, $j);
 }
 
 print_r($arr);
+
+echo "<br>";
+echo "<br>";
+
+
+//desafio 30c array dinamico e criar loop para exibir só os impares
+
+$array = [];
+
+for($k = 10; $k <= 20; $k++) {
+    array_push($array, $k);
+}
+
+print_r($array);
+
+echo "<br>";
+echo "<br>";
+
+for($k = 0; $k < count($array); $k++){
+    if($array[$k] % 2 != 0) {
+        echo "Número impar: $array[$k] <br>";
+    }
+}
+
