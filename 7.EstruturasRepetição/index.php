@@ -14,6 +14,9 @@ while($contador <= 30){
     $contador += 2;
 }
 
+echo "<br>";
+echo "<br>";
+
 // CONTINUE 
 
 $a = 10;
@@ -30,4 +33,33 @@ while($a > 0) {
     }
 
     $a--;
+}
+
+echo "<br>";
+echo "<br>";
+
+//Do While
+
+$j = 0;
+
+do {
+
+    echo "Testndo do While $j <br>";
+
+    $j++;
+
+} while($j < 10);
+
+echo "<br>";
+echo "<br>";
+
+//for
+
+for($k = 0; $k < 10; $k++) {
+
+    if($k == 1) {
+        break;
+    }
+
+    echo "teste <br>";
 }
