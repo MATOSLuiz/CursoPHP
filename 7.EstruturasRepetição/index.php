@@ -63,3 +63,13 @@ for($k = 0; $k < 10; $k++) {
 
     echo "teste <br>";
 }
+
+
+//foreach muito utilizada funciona orientada a  array e é usado em iterações.
+
+$array = [0,1,2,3,4,5];
+
+foreach($array as $item) {
+    echo $item . "<br>";
+}
+
