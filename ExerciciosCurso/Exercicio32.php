@@ -12,4 +12,13 @@ function mult() {
 
 mult();
 
+function fullName() {
+    $firstName = "Luiz";
+    $surname = "Matos";
+
+    echo "<br>". $firstName . " " . $surname;
+}
+
+fullName();
+
 ?>
