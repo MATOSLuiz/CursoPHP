@@ -27,9 +27,25 @@ subtracao();
 
 //função nativa strtoupper
 
-echo strtoupper("teste");
+echo strtoupper("teste <br>");
 
 //Dica: iniciar todas as funções do programa no topo do arquivo.
 
+//Função com parametros
+
+function name($name) {
+    echo "Nome: $name <br>";
+}
+
+name("Luiz Matos");
+name("Clara");
+name("Maria");
+name("Graziela");
+
+function produto($nome, $valor) {
+    echo "$nome: R$ $valor <br>";
+}
+
+produto("Gasolina", 10);
 
 ?>
