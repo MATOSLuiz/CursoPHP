@@ -48,4 +48,18 @@ function produto($nome, $valor) {
 
 produto("Gasolina", 10);
 
+//Normalmente a função tem um retorno.
+
+function soma($n1, $n2) {
+    return $n1 + $n2 . "<br>";
+}
+
+echo soma(1,1);
+
+$x = soma(8,2);
+
+echo $x;
+
+//com o return transferimos um valor do escopo local para o global.
+
 ?>
