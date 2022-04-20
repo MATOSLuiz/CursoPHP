@@ -62,4 +62,26 @@ echo $x;
 
 //com o return transferimos um valor do escopo local para o global.
 
+//RELEMBRANDO ESCOPOS
+
+$e = 10;
+
+$b = 15;
+
+function testeEscopo() {
+    $e = 5;
+
+    global $b;
+
+    $b++;
+
+    echo "ESCOPO LOCAL de E: $e <br>";
+    echo "ESCOPO Global na função de B: $b <br>";
+}
+
+echo "Escopo Global de E: $e <br>";
+echo "Escopo Global de B: $b <br>";
+testeEscopo();
+echo "Escopo Global de B: $b <br>";
+
 ?>
