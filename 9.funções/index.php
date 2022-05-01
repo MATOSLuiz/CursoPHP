@@ -133,5 +133,20 @@ print_r($dados);
 
 echo "<br>";
 
-echo "Olá $dados[0], Você tem $dados[1]";
+echo "Olá $dados[0], Você tem $dados[1] <br>";
+
+//Depuração com print_r e var_dump(mais legivel para humanos)
+
+$arrayTeste = [
+    "teste",
+    15, 
+    156,
+    [1,4,7]
+];
+
+print_r($arrayTeste);
+echo "<br>";
+echo "<br>";
+var_dump($arrayTeste);
+
 ?>
