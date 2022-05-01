@@ -104,4 +104,21 @@ function testandoDefaults($b, $a = 15) {
 testandoDefaults(185,178);
 testandoDefaults(185);
 
+//Funções nativas auxiliares -> func_get_arg(retorna uma lista com os argumentos de uma função)
+// func_num_args(retorna o número de argumentos de uma função)
+
+function sum($a, $b) {
+
+    print_r(func_get_args());
+    echo("<br>");
+    echo func_num_args() . "<br>";
+
+    return $a + $b;
+}
+
+sum(15, 15);
+
+
+
+
 ?>
