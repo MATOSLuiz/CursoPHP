@@ -2,11 +2,11 @@
 
 //Estrutura Função
 
-function teste() {
+// function teste() {
 
-    //código
+//     //código
 
-}
+// }
 
 //o php tem funções nativas como strlen, strtoupper...
 
@@ -83,5 +83,25 @@ echo "Escopo Global de E: $e <br>";
 echo "Escopo Global de B: $b <br>";
 testeEscopo();
 echo "Escopo Global de B: $b <br>";
+
+//Parametro Default
+
+function teste ($a = "teste") {
+    echo $a . "<br>";
+}
+
+teste();
+teste("OI");
+
+
+//Default sempre por ultimo
+
+function testandoDefaults($b, $a = 15) {
+    echo "Argumento A : " . $a . "<br>";
+    echo "Argumento B: " . $b . "<br>";
+}
+
+testandoDefaults(185,178);
+testandoDefaults(185);
 
 ?>
