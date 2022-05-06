@@ -34,15 +34,39 @@ $name = "Louis";
 
 printf("Meu nome é %s <br>"  , $name);
 
+echo "<br>";
+echo "<br>";
+
 // %d para inteiros
 
 $idade = 18;
 
 printf("Tenho %d anos <br>", $idade);
 
+echo "<br>";
+echo "<br>";
+
 // %float
 
 printf("%.2f m", 1.85);
+
+echo "<br>";
+echo "<br>";
+
+//Strlen()
+
+$str1 = "Eu sou uma string bem grande";
+$str2 = "Eu n";
+
+echo strlen($str1) . "<br>";
+echo strlen($str2) . "<br>";
+
+$str = "Como Percorrer as palavras de uma string";
+
+for($i = 0; $i < strlen($str); $i++) {
+
+    echo $str[$i] ."<br>";
+}
 
 
 ?>
