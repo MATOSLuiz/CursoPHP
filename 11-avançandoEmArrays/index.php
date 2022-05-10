@@ -58,16 +58,39 @@
 
 // Número de elementos count()
 
-$arr = range(1,50);
+// $arr = range(1,50);
 
-echo count($arr);
-echo "<br>";
+// echo count($arr);
+// echo "<br>";
 
-$arrAssoc = [
-    "nome" => "Luiz",
-    "idade" => 18
+// $arrAssoc = [
+//     "nome" => "Luiz",
+//     "idade" => 18
+// ];
+
+//  echo count($arrAssoc);
+
+//Array Multidimensional simula uma matriz
+
+$arr = [
+    ["Banana", "Maçã", "Laranja"],
+    ["Uva", "Pera", "Salada mista"]
 ];
 
- echo count($arrAssoc);
+//Acessar a string Maçã
+
+echo $arr[0][1] . "<br>";
+
+//Acessar Salada mista
+
+echo $arr[1][2] . "<br>";
+
+echo count($arr); //contabiliza o array 'principal'
+echo "<br>";
+echo count($arr[1]); // '' '' 'secundário'
+
+
+
+
 
 ?>
