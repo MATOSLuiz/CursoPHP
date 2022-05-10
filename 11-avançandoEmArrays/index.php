@@ -46,12 +46,28 @@
 
 //Função range para criar um array rapidamente
 
-$arr = range(0,10);
+// $arr = range(0,10);
 
-print_r($arr);
+// print_r($arr);
+// echo "<br>";
+
+// //com step aqui no caso de 0 a 1000 de 100 em 100
+// $arr2 = range(0,1000,100);
+// print_r($arr2);
+
+
+// Número de elementos count()
+
+$arr = range(1,50);
+
+echo count($arr);
 echo "<br>";
 
-//com step aqui no caso de 0 a 1000 de 100 em 100
-$arr2 = range(0,1000,100);
-print_r($arr2);
+$arrAssoc = [
+    "nome" => "Luiz",
+    "idade" => 18
+];
+
+ echo count($arrAssoc);
+
 ?>
