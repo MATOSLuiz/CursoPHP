@@ -166,7 +166,7 @@ class Human {
     }
 
     protected function surtar() {
-        echo "EU QUERO MEU DECIMO TERCEIRO!";
+        echo "OLAAAAAA MUNDOOO";
     } 
 
     public function acessaSurtar() {
@@ -191,5 +191,145 @@ echo $paulo->idade . "<br>";
 $paulo->falar();
 $paulo->acessaGrito();
 $paulo->acessaSurtar();
+
+
+//Ancestralidade
+
+if($Jao instanceof Human) {
+    echo "<br> o Jão é um objeto da classe pai Human";
+} else {
+    echo "<br> o Jão não é um objeto da classe pai Human";
+}
+
+$apollo = new Animal; 
+
+if($apollo instanceof Programador) {
+    echo "<br> o Apollo é um programador";
+} else {
+    echo "<br> o Apollo não é um programador";
+}
+
+if($paulo instanceof Programador) {
+    echo "<br> o Paulo é um programador";
+} else {
+    echo "<br> o Paulo não é um programador";
+}
+
+if($paulo instanceof Human) {
+    echo "<br> o Paulo é um humano";
+} else {
+    echo "<br> o Paulo não é um humano";
+}
+
+//Traits
+
+trait Objeto {
+    public function teste() {
+        echo "Testando trait de objeto <br>";
+    }
+}
+
+class Central {
+    use Objeto;
+}
+
+$a = new Central;
+
+$a -> teste();
+
+// Classes abstratas
+
+abstract class Teste {
+    public static function testandoClasse() {
+        echo "Este método é de uma classe abstrata <br>";
+    }
+
+    abstract function testeAbs();
+
+}
+
+Teste::testandoClasse();
+
+class Nova extends Teste {
+
+    public function testeAbs() {
+        echo "teste abstrato <br>";
+    }
+
+}
+
+$n = new Nova;
+$n -> testeAbs();
+
+
+// Constructor 
+
+class Carros {
+    public $portas;
+    public $cor;
+    public $marca;
+
+    function __construct($portas, $cor, $marca) {
+        
+        $this->portas = $portas;
+        $this->cor = $cor;
+        $this->marca = $marca;
+
+    }
+}
+
+$ferrari = new Carros(4, "Azul", "Fiat");
+
+echo "O Carro é da marca $ferrari->marca da cor $ferrari->cor e tem $ferrari->portas portas";
+
+
+//Verificando classes
+
+class Wilsinho {
+
+    public $nome;
+
+    public function teste() {
+        echo "Oi Cueio";
+    }
+
+}
+
+$gabriel = new Wilsinho;
+
+$gabriel->nome = "Gabriel";
+
+if(class_exists("Wilsinho")) {
+    echo "Classe Wilsinho is real";
+} else {
+    echo "Classe mini Wilson not is real";
+}
+
+print_r(get_class_methods('Wilsinho'));
+print_r(get_class_vars('Wilsinho'));
+
+
+//Verificando Objetos
+
+
+class Gabriel {
+    public function falar() {
+        echo "Oi";
+    }
+}
+
+$wilsinho = new Gabriel;
+
+if(is_object($wilsinho)) {
+    echo "É um objeto";
+}
+
+echo "<br>";
+
+echo get_class($wilsinho);
+
+if(method_exists($wilsinho, "falar")) {
+    echo "Tem métodos";
+}
 
 ?>
