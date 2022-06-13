@@ -142,17 +142,26 @@
 
 //Existem duas formas de saber isso, utilizando o isset e o array_key_exists
 
-$arr = [
-    'nome' => "Luiz"
-];
+// $arr = [
+//     'nome' => "Luiz"
+// ];
 
-if(isset($arr['nome'])) {
-    echo "existe<br>";
-}
+// if(isset($arr['nome'])) {
+//     echo "existe<br>";
+// }
 
-if(array_key_exists("nome", $arr)) {
-    echo "existe";
-}
+// if(array_key_exists("nome", $arr)) {
+//     echo "existe";
+// }
 
+//Remover elementos de um array
+
+$arr = [0,1,2,3,4,5,6];
+
+$removidos = array_splice($arr, 1,2);
+
+print_r($arr);
+echo "<br>";
+print_r($removidos);
 
 ?>
