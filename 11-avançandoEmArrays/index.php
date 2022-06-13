@@ -122,21 +122,37 @@
 
 //Chaves e valores em arrays associativos
 
-$carro = [
-    'marca' => "Volwks",
-    'portas' => "quatro",
-    'tetoSolar' => true,
-    'cambio' => "auto"
+// $carro = [
+//     'marca' => "Volwks",
+//     'portas' => "quatro",
+//     'tetoSolar' => true,
+//     'cambio' => "auto"
+// ];
+
+// $chaves = array_keys($carro);
+
+// print_r($chaves);
+// echo "<br>";
+
+// $valores = array_values($carro);
+
+// print_r($valores);
+
+//Verificando se valor existe no array
+
+//Existem duas formas de saber isso, utilizando o isset e o array_key_exists
+
+$arr = [
+    'nome' => "Luiz"
 ];
 
-$chaves = array_keys($carro);
+if(isset($arr['nome'])) {
+    echo "existe<br>";
+}
 
-print_r($chaves);
-echo "<br>";
-
-$valores = array_values($carro);
-
-print_r($valores);
+if(array_key_exists("nome", $arr)) {
+    echo "existe";
+}
 
 
 ?>
