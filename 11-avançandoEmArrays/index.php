@@ -109,10 +109,16 @@
 
 // Array Slice
 
-$arr = [4,6,8,10];
+// $arr = [4,6,8,10];
 
-$slice = array_slice($arr,1,5);
+// $slice = array_slice($arr,1,5);
 
-print_r($slice);
+// print_r($slice);
+
+
+// $arr = range(1,20);
+
+// print_r(array_chunk($arr,4));
+
 
 ?>
