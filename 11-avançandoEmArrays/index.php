@@ -92,21 +92,27 @@
 
 // Criar varias variaveis com base em um array
 
-$pessoa = [
-    "Luiz",
-    18,
-    "Programador",
-    "Marrom claro"
-];
+// $pessoa = [
+//     "Luiz",
+//     18,
+//     "Programador",
+//     "Marrom claro"
+// ];
 
-list($nome,$idade,$profissao,$corDosOlhos) = $pessoa;
-
-
-echo "$nome <br>";
-echo "$idade <br>";
-echo "$profissao <br>";
-echo "$corDosOlhos <br>";
+// list($nome,$idade,$profissao,$corDosOlhos) = $pessoa;
 
 
+// echo "$nome <br>";
+// echo "$idade <br>";
+// echo "$profissao <br>";
+// echo "$corDosOlhos <br>";
+
+// Array Slice
+
+$arr = [4,6,8,10];
+
+$slice = array_slice($arr,1,5);
+
+print_r($slice);
 
 ?>
