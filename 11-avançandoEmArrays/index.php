@@ -120,5 +120,23 @@
 
 // print_r(array_chunk($arr,4));
 
+//Chaves e valores em arrays associativos
+
+$carro = [
+    'marca' => "Volwks",
+    'portas' => "quatro",
+    'tetoSolar' => true,
+    'cambio' => "auto"
+];
+
+$chaves = array_keys($carro);
+
+print_r($chaves);
+echo "<br>";
+
+$valores = array_values($carro);
+
+print_r($valores);
+
 
 ?>
