@@ -72,24 +72,40 @@
 
 //Array Multidimensional simula uma matriz
 
-$arr = [
-    ["Banana", "Maçã", "Laranja"],
-    ["Uva", "Pera", "Salada mista"]
-];
+// $arr = [
+//     ["Banana", "Maçã", "Laranja"],
+//     ["Uva", "Pera", "Salada mista"]
+// ];
 
 //Acessar a string Maçã
 
-echo $arr[0][1] . "<br>";
+// echo $arr[0][1] . "<br>";
 
-//Acessar Salada mista
+// //Acessar Salada mista
 
-echo $arr[1][2] . "<br>";
+// echo $arr[1][2] . "<br>";
 
-echo count($arr); //contabiliza o array 'principal'
-echo "<br>";
-echo count($arr[1]); // '' '' 'secundário'
+// echo count($arr); //contabiliza o array 'principal'
+// echo "<br>";
+// echo count($arr[1]); // '' '' 'secundário'
 
 
+// Criar varias variaveis com base em um array
+
+$pessoa = [
+    "Luiz",
+    18,
+    "Programador",
+    "Marrom claro"
+];
+
+list($nome,$idade,$profissao,$corDosOlhos) = $pessoa;
+
+
+echo "$nome <br>";
+echo "$idade <br>";
+echo "$profissao <br>";
+echo "$corDosOlhos <br>";
 
 
 
